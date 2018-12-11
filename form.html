@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <title>Straight to the Point Archery</title>
+  </head>
+  <body>
+  <div class="grid-container">
+    <header>
+      <div class="logo">
+        <img src="image/archeryAcademy-logo-white.png" alt="logo" height="70">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="class.html">Class</a></li>
+          <li><a href="instructor.html">Instructor</a></li>
+          <li><a href="form.html">Registration</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Registration</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Participant</legend>
+          <label for="className">Register for class: </label>
+          <select name="classes" id="className">
+            <option value="a101" selected>A101 Basic Archery</option>
+            <option value="a102">A102 Intermediate Archery</option>
+            <option value="a103">A103 Advanced Archery</option>
+            <option value="p1">Private Lesson: Single Lesson</option>
+            <option value="p3">Private Lesson: 3 Lesson Package</option>
+            <option value="p10">Private Lesson: 10 Lesson Package</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Personal Infomation</legend>
+          <label for="firstName">First name: </label>
+          <input type="text" name="first-name" id="firstName" required>
+          <label for="lastName">Last name: </label>
+          <input type="text" name="first-name" id="lastName" required>
+          <div class="radio-select">
+          <label><input type="radio" name="gender" value="male" checked> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+          </div>
+          <label for="birthDate">Date of birth: </label>
+          <input type="date" name="date-of-birth" id="birthDate">
+        </fieldset>
+        <fieldset>
+          <legend>Contact Infomation</legend>
+          <label for="userEmail">Email: </label>
+          <input type="email" name="user-email" id="userEmail" required>
+          <label for="phoneNum">Phone: </label>
+          <input type="tel" name="phone-number" id="phoneNum" pattern="[0-9]{10}" required>
+          <div class="radio-select">
+            <label><input type="radio" name="phone-type" value="home" checked> Home</label>
+            <label><input type="radio" name="phone-type" value="work"> Work</label>
+            <label><input type="radio" name="phone-type" value="cell"> Cell</label>
+          </div>
+        </fieldset>
+        <input type="submit" value="SUBMIT" name="submit">
+      </form>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <img src="image/archeryAcademy-logo-white.png" height="50" alt="logo">
+      </div>
+      <div class="location-hours">
+        <p>Straight to the Point Archery</p>
+        <address>528 Nock Point Ln Tacoma, WA 98412</address>
+        <p>archery-education@example.com</p>
+        <p>(253)555-1010</p>
+      </div>
+      <div class="site-maps">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="class.html">Class</a></li>
+          <li><a href="instructor.html">Instructor</a></li>
+          <li><a href="form.html">Registration</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
